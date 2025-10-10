@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { Box, Heading, Text, SimpleGrid, Image, VStack, IconButton, HStack, Fade, Tooltip, Link } from "@chakra-ui/react";
-import { FaHeart } from "react-icons/fa";
+import { Box, Heading, Text, SimpleGrid, Image, VStack } from "@chakra-ui/react";
 import p1 from "../static/images/meraki/p1.JPG"
 import p2 from "../static/images/meraki/p2.JPG"
 import p3 from "../static/images/meraki/p3.jpg"
@@ -12,35 +10,12 @@ import p8 from "../static/images/meraki/p10.JPG"
 import p9 from "../static/images/meraki/p9.jpeg"
 import meraki from "../static/images/meraki/meraki-cover.jpg"
 import merakiAvatar from "../static/images/meraki/meraki-banner-1.JPEG"
-import { useSelector, useDispatch } from "react-redux"
-import { toggleLike } from '../redux/likeSlice'
-import { FaInstagram } from "react-icons/fa"
+// Example images, replace with your own
+const paintings = [
+  p1, p2, p3, p4, p5, p6, p7, p8, p9
+];
 
 export default function Meraki() {
-
-  const paintings = [p1, p2, p3, p4, p5, p6, p7, p8, p9]; //to save the array of paintings
-  const dispatch = useDispatch();
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  // Replace with your real user name
-  const currentUser = "You";
-
-  const handleToggle = (index) => {  // this function will handle the like toggles of the paintings by keeping their index and dispatching the action
-    const id = `p${index + 1}`;
-    dispatch(toggleLike({ id, userName: currentUser }));
-  };
-
-  // a state to get likes info from redux store
-  const likesState = useSelector((state) =>
-    state.likes?.paintings ?? state.like?.paintings ?? {}
-  );
-
-  // Count how many paintings the current user has liked
-  const likedCount = Object.values(likesState || {}).filter(painting =>
-    painting.likers.includes(currentUser)
-  ).length;
-
-
   return (
     <>
     <Box minH="100vh">
@@ -111,120 +86,50 @@ export default function Meraki() {
             
         </Box>
         {/* Gallery */}
-          <VStack spacing={6} mt={8}>
-
-            <Heading as="h2" size="lg" color="#3f7a70">Gallery</Heading>
-            <Text color="#3f7a70" textAlign="center">Explore my collection...</Text>
-
-            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} mx={{ base: "2rem", md: "5rem" }}>
-              {paintings.map((src, i) => {
-                const id = `p${i + 1}`;
-                const paintingState = likesState[id] || { liked: false, count: 0, likers: [] };
-
-                return (
-                  <Box
-                    key={id}
-                    position="relative"
-                    bg="rgba(255,255,255,0.06)"
-                    boxShadow="0 8px 32px 0 rgba(31, 38, 135, 0.10)"
-                    overflow="hidden"
-                    borderRadius="md"
-                    onMouseEnter={() => setHoveredIndex(i)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                    _hover={{ transform: "scale(1.02)" }}
-                    transition="transform 0.2s"
-                  >
-                    {/* real image */}
-                    <Image src={src} alt={`Meraki painting ${i + 1}`} w="100%" h="320px" objectFit="cover" />
-
-                    {/* overlay (appears on hover) */}
-                    {hoveredIndex === i && (
-                      <Box
-                        position="absolute"
-                        top={0}
-                        left={0}
-                        w="100%"
-                        h="100%"
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="center"
-                        background="rgba(0, 0, 0, 0.6)"
-                        color="white"
-                        flexDirection="column"
-                        gap={3}
-                        p={4}
-                      >
-                        <HStack spacing={3}>
-                          <IconButton
-                            icon={<FaHeart />}
-                            aria-label="Like"
-                            size="lg"
-                            variant="ghost"
-                            color={paintingState.liked ? "red.300" : "whiteAlpha.800"}
-                            onClick={() => handleToggle(i)}
-                            _hover={{ transform: "scale(1.08)" }}
-                          />
-                          <Text color={"white"} fontWeight="semibold">{paintingState.count}</Text>
-                        </HStack>
-
-                        {/* likers list - show avatars or names */}
-                        <HStack spacing={2} mt={2} wrap="wrap" justifyContent="center">
-                          {paintingState.likers.length === 0 ? (
-                            <Text fontSize="sm" color="whiteAlpha.800">No likes yet</Text>
-                          ) : (
-                            paintingState.likers.map((name, idx) => (
-                              // small pill or avatar — adjust styling as you like
-                              <Tooltip key={name + idx} label={name} openDelay={250}>
-                                <Box
-                                  px={2}
-                                  py={1}
-                                  bg="blackAlpha.400"
-                                  borderRadius="full"
-                                  fontSize="sm"
-                                  fontWeight="medium"
-                                >
-                                  {name}
-                                </Box>
-                              </Tooltip>
-                            ))
-                          )}
-                        </HStack>
-
-                        {/* Optional: link to Instagram or open full view */}
-                        <HStack mt={3} spacing={2}>
-                          <FaInstagram />
-                          <Link 
-                            href="https://www.instagram.com/meraki_by_nimrashahzad/" 
-                            isExternal 
-                            fontSize="xs" 
-                            color="whiteAlpha.700"
-                            _hover={{ textDecoration: "underline", color: "white" }}
-                          >
-                            Open on Instagram
-                          </Link>
-                        </HStack>
-                      </Box>
-                    )}
-                  </Box>
-                );
-              })}
-            </SimpleGrid>
-            {likedCount > 0 && (
-              <Text
-                mt={6}
-                fontSize={{ base: "md", md: "xl" }}
+        <VStack>
+            <Heading
+                as="h2"
+                size="lg"
                 color="#3f7a70"
-                fontWeight="semibold"
+                letterSpacing="wider"
+                fontFamily="'Montserrat', sans-serif"
+                mb={2}
                 textAlign="center"
-                textShadow="0 1px 4px rgba(0,0,0,0.1)"
-              >
-                🎨 High five! You've given {likedCount} {likedCount === 1 ? "painting" : "paintings"} a heart! Your art radar is on point! 💖
-              </Text>
-            )}
-
+                textShadow="0 2px 8px rgba(63, 122, 112, 0.08)"
+            >
+                Gallery
+            </Heading>
+            <Text
+                as="h2"
+                size="lg"
+                color="#3f7a70"
+                letterSpacing="wider"
+                fontFamily="'Montserrat', sans-serif"
+                mb={2}
+                textAlign="center"
+                textShadow="0 2px 8px rgba(63, 122, 112, 0.08)"
+            >
+                Explore my collection where each piece tells its own story, inspired by nature, emotion, and the beauty of everyday moments.
+            </Text>
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} mx={{ base: "2rem", md: "5rem" }}>
+                {paintings.map((src, i) => (
+                <Box
+                    key={i}
+                    bg="rgba(255,255,255,0.18)"
+                    // borderRadius="2xl"
+                    boxShadow="0 8px 32px 0 rgba(31, 38, 135, 0.18)"
+                    overflow="hidden"
+                    _hover={{ transform: "scale(1.03)", transition: "0.3s" }}
+                    transition="0.3s"
+                >
+                    <a href="https://www.instagram.com/meraki_by_nimrashahzad/" target="_blank">
+                        <Image src={src} alt={`Meraki painting ${i + 1}`} w="100%" h="320px" objectFit="cover" />
+                    </a>
+                </Box>
+                ))}
+            </SimpleGrid>
         </VStack>
-
-        {/* Artist in Me story */}
+        {/* Artist in me story */}
         <VStack display={"flex"} alignItems="center" justifyContent="center" height="400" spacing={4}>
             <Heading
                 as="h2"

@@ -1,96 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Box, Heading, Text, Stack, Badge, SimpleGrid, border, List, ListIcon, ListItem, Image } from '@chakra-ui/react'
+import { Box, Heading, Text, Stack, Badge, SimpleGrid, border, List, ListIcon, ListItem } from '@chakra-ui/react'
 import { MinusIcon } from '@chakra-ui/icons'
-import ExtraOne from './../static/images/extra-one.jpg'
-import ExtraTwo from './../static/images/extra-two.jpg'
-import ExtraThree from './../static/images/infinity.png'
-
-function ExtraCard({ title, image, isOpen, onClick, description }) {
-  const [hover, setHover] = useState(false)
-
-  return (
-    <Box mb={isOpen ? 6 : 0}>
-      <Box
-        position="relative"
-        height="260px"
-        borderRadius="20px"
-        overflow="hidden"
-        cursor="pointer"
-        boxShadow={
-          hover || isOpen
-            ? "-8px -8px 16px #ffffff, 8px 8px 16px #bababa"
-            : "0 12px 28px rgba(63, 122, 112, 0.24)"
-        }
-        transform={hover ? "scale(1.03)" : "scale(1)"}
-        transition="all 0.3s ease"
-        bg="#f8f6f0"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        onClick={onClick}
-      >
-        <Image
-          src={image}
-          alt={title}
-          objectFit="cover"
-          w="100%"
-          h="100%"
-          filter={hover ? "brightness(0.5)" : "brightness(0.9)"}
-          transition="filter 0.3s ease"
-        />
-        <Box
-          position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
-          color="white"
-          textAlign="center"
-          background="rgba(26, 51, 47, 0.89)"
-          p={2}
-          borderRadius="8px"
-        >
-          <Heading size="md" color="white">
-            {title}
-          </Heading>
-        </Box>
-      </Box>
-
-      {isOpen && (
-        <Text
-          mt={4}
-          fontSize="sm"
-          color="#3f7a70"
-          textAlign="left"
-          bg="#ffffff"
-          p={4}
-          borderRadius="10px"
-          boxShadow="0 6px 20px rgba(0, 0, 0, 0.1)"
-        >
-          {description}
-        </Text>
-      )}
-    </Box>
-  );
-}
-
-
-const extracurriculars = [
-  { 
-    title: "Spreading Smiles and Tinkers", 
-    image: ExtraOne,
-    description: "A youth-led initiative focused on empowering children through education and creative workshops. I led art therapy sessions to spark creativity and emotional healing."
-  },
-  { 
-    title: "Formula Student Team Infinity", 
-    image: ExtraThree,
-    description: "Member of the Formula Student Car team to participate in FSUK competition representing Pakistan on an international engineering platform."
-  },
-  { 
-    title: "Google Developers Student Club", 
-    image: ExtraTwo,
-    description: "Participated in coding workshops and tech talk events. Contributed to hackathons focused on solving real-world problems using Google technologies."
-  },
-];
-
 
 const projects = [
   {
@@ -258,11 +168,7 @@ function ProjectCard({ title, desc, tags = [], impact, date  }) {
 
 const LandingPage = () => {
   const [scrolling, setScrolling] = useState(false)
-  const [openCard, setOpenCard] = useState(null);
 
-  const toggleCard = (title) => {
-    setOpenCard((prev) => (prev === title ? null : title)); // Toggle
-  };
   useEffect(() => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 50)
@@ -280,7 +186,7 @@ const LandingPage = () => {
         mt="100px"
         textAlign="center"
         p={{  base: 2, md: 8 }}
-        bg="#f8f6f0"
+        bg="white"
         color="black"
         display="flex"
         flexDirection="column"
@@ -305,25 +211,9 @@ const LandingPage = () => {
             </Heading>
             <Text mb={{ base: 2, md: 4 }}>Here's what I have been working on</Text>
           </Box>
-
-          <Text color="#3f7a70" fontSize="24px" my={4}>Coding projects</Text>
           <SimpleGrid columns={{ base: 1, md: 2 }} mt={6} spacing={6} mx={6}>
             {projects.map((proj) => (
               <ProjectCard key={proj.title} {...proj} />
-            ))}
-          </SimpleGrid>
-
-          <Text color="#3f7a70" fontSize="24px" my={4}>Blogs and Extra curriculars</Text>
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} mx={{ base: "2rem", md: "5rem" }}>
-            {extracurriculars.map((item) => (
-              <ExtraCard
-                key={item.title}
-                title={item.title}
-                image={item.image}
-                description={item.description}
-                isOpen={openCard === item.title}
-                onClick={() => toggleCard(item.title)}
-              />
             ))}
           </SimpleGrid>
         </Box>
