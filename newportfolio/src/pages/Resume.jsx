@@ -13,6 +13,7 @@ export default function Resume() {
       justifyContent="center"
       px={4}
       py={12}
+      mt={"60px"}
     >
       <VStack
         spacing={8}

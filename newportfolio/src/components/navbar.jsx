@@ -95,6 +95,7 @@ const Navbar = () => {
             >
               <Image
                 src={NavLogo}
+                alt="Logo"
                 maxW={{ base: "36px", md: "50px" }}
                 position="absolute"
                 top="0"

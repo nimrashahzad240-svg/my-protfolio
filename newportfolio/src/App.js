@@ -6,13 +6,15 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <Router>
-      {/* Navbar is used as a shared component */}
+      {/* Shared Navbar */}
       <Navbar />
-      {/* These are route paths that will take you to the right page i.e Home, Meraki, Projects */}
+      
+      {/* Page Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/meraki" element={<Meraki />} />
@@ -21,6 +23,9 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      {/* <Footer /> */}
     </Router>
+
+    
   );
 }
