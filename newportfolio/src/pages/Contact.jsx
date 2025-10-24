@@ -12,38 +12,65 @@ import {
   FormErrorMessage,
   useToast,
 } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
   const toast = useToast();
+
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
 
-    // This will appear after user send a message. it's not working right now. After the Backend is done, it will work.
-    setTimeout(() => {
-      setIsSending(false);
-      setEmail("");
-      setMessage("");
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-        status: "success",
-        duration: 4000,
-        isClosable: true,
-      });
-    }, 1200);
+    emailjs
+      .send(
+        "service_9a0pfvj", // this is service ID from emailjs
+        "template_t1mqgep", // this is template ID from emailjs
+        {
+          email: email, // user's email
+          name: name,   // user's name will appear as 'name' in template
+          title: message, // message will appear as 'title' in template
+        },
+        "x5n58P-wU3dg9SAsR" // this is Public key from emailjs
+      )
+      .then(
+        (result) => {
+          setIsSending(false);
+          setEmail("");
+          setMessage("");
+          toast({
+            title: "Message sent!",
+            description: "Thank you for reaching out. I'll get back to you soon.",
+            status: "success",
+            duration: 4000,
+            isClosable: true,
+          });
+        },
+        (error) => {
+          setIsSending(false);
+          toast({
+            title: "Something went wrong",
+            description: "Unable to send message. Try again later.",
+            status: "error",
+            duration: 4000,
+            isClosable: true,
+          });
+        }
+      );
   };
+
 
   return (
     <>
     <VStack pt={12} mt={4} background={"#f8f6f0"} justifyContent={"center"} alignItems={"center"} height={'200px'}> 
         <Box id="contact">
         <Heading size="lg" color="#3f7a70" mb={2}>Let’s build something</Heading>
-        <Text color="#3f7a70">Email: nimra.shahzad96@gmail.com</Text>
+        <Text color="#3f7a70">Email: nimra.shahzad240@gmail.com</Text>
       </Box>
     </VStack>
     <Box
@@ -78,25 +105,29 @@ export default function Contact() {
           <form onSubmit={handleSubmit}>
             <VStack spacing={4} align="stretch">
               <FormControl isRequired>
-                <FormLabel color="#3f7a70">Your Email</FormLabel>
+                <FormLabel color="#1f3d38ff">Your Email</FormLabel>
                 <Input
                   type="email"
                   placeholder="your@email.com"
                   value={email}
+                  color="#1f3d38ff"
                   onChange={(e) => setEmail(e.target.value)}
+                  _placeholder={{ color: '#1f3d38ff', fontStyle: 'italic' }}
                   focusBorderColor="#3f7a70"
-                  bg="#f8f6f0"
+                  bg="#ffffffff"
                 />
               </FormControl>
               <FormControl isRequired>
-                <FormLabel color="#3f7a70">Message</FormLabel>
+                <FormLabel color="#1f3d38ff">Message</FormLabel>
                 <Textarea
                   placeholder="Type your message here..."
                   value={message}
+                  color="#1f3d38ff"
                   onChange={(e) => setMessage(e.target.value)}
                   rows={6}
                   focusBorderColor="#3f7a70"
-                  bg="#f8f6f0"
+                  _placeholder={{ color: '#1f3d38ff', fontStyle: 'italic' }}
+                  bg="#ffffffff"
                 />
               </FormControl>
               <Button

@@ -20,7 +20,7 @@ const LandingPage = () => {
         mt={{ base: "80px", md: "100px" }} // smaller margin on mobile
         textAlign="center"
         p={{ base: 4, md: 8 }} // responsive padding
-        bg="white"
+        bg="#f8f6f0"
         color="black"
         display="flex"
         flexDirection="column"
@@ -136,6 +136,36 @@ const LandingPage = () => {
       <Box mt={12} display="flex" justifyContent="center">
         {/* <Image src={profileImg} alt="Nimra" maxWidth={{ base: "200px", md: "300px" }} /> */}
       </Box>
+
+      <Box
+            overflow="hidden"
+            whiteSpace="nowrap"
+            position="relative"
+            w="100%"
+            display="flex"
+              justifyContent="center"
+          >
+            <Text
+              display = {{ base: "none", md: "inline-block"}}
+              as="span"
+              fontSize={{ base: "sm", md: "lg" }}
+              color="#3f7a70"
+              textTransform="uppercase"
+              fontWeight="semibold"
+              letterSpacing="widest"
+              sx={{
+                animation: "scroll 30s linear infinite", //The text moves smoothly from right to left over 30 seconds and loops forever.
+                "@keyframes scroll": {
+                  "0%": { transform: "translateX(0)" }, 
+                  "100%": { transform: "translateX(-50%)" }, // Only half because we duplicate content The keyframe animation moves the 
+                  // text by -50% of its width because the content is duplicated to make the loop seamless
+                },
+              }}
+            >
+              Design . Paint . Escape . Embrace . Code . Discover . Yourself . Dream . Create . Wander . Build . Heal . Inspire . Transform . Express . Explore . Evolve . Invent . Flow . Imagine . Breathe . Become &nbsp;&nbsp;
+              Design . Paint . Escape . Embrace . Code . Discover . Yourself . Dream . Create . Wander . Build . Heal . Inspire . Transform . Express . Explore . Evolve . Invent . Flow . Imagine . Breathe . Become
+            </Text>
+          </Box>
     </Box>
   )
 }
