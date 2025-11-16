@@ -197,6 +197,51 @@ export default function Header() {
 
 
       </Box>
+
+      {/* BLOGS SECTION */}
+      <Box
+        w="100%"
+        bg="#f8f6f0"
+        py={{ base: 10, md: 16 }}
+        display="flex"
+        justifyContent="center"
+      >
+        <VStack spacing={8} maxW="900px" w="100%" textAlign="center">
+          <Heading
+            fontSize={{ base: "3xl", md: "4xl" }}
+            color="#3f7a70"
+            letterSpacing="widest"
+            textTransform="uppercase"
+          >
+            Blog / Media Assignment
+          </Heading>
+
+          {/* Blog Card */}
+          <Box
+            w="100%"
+            p={6}
+            bg="white"
+            boxShadow="md"
+            borderRadius="lg"
+            _hover={{ boxShadow: "xl", transform: "scale(1.02)", transition: "0.3s" }}
+            cursor="pointer"
+            onClick={() => window.location.href = "/blog-media"}
+          >
+            <Heading
+              fontSize={{ base: "2xl", md: "3xl" }}
+              color="#3f7a70"
+              mb={3}
+            >
+              Interactive Media – Assignment 3
+            </Heading>
+
+            <Text fontSize="md" color="gray.600">
+              View the 3 required images: Business Headshot, Aesthetic Shot, and Passion Composite Image.
+            </Text>
+          </Box>
+        </VStack>
+      </Box>
+
     </>
   );
 }
