@@ -7,6 +7,7 @@ import CoofeeMugTwo from "../static/images/animations/coffeeMug2.png";
 import Paint from "../static/images/animations/paint1.png";
 import PaintTwo from "../static/images/animations/paint2.png";
 import CupWithCode from "../static/images/animations/paint4.png";
+import { Link as RouterLink } from "react-router-dom";
 
 const MotionImage = motion(Image);
 
@@ -218,6 +219,8 @@ export default function Header() {
 
           {/* Blog Card */}
           <Box
+            as={RouterLink}
+            to="/blog-media"
             w="100%"
             p={6}
             bg="white"
@@ -225,7 +228,6 @@ export default function Header() {
             borderRadius="lg"
             _hover={{ boxShadow: "xl", transform: "scale(1.02)", transition: "0.3s" }}
             cursor="pointer"
-            onClick={() => window.location.href = "/blog-media"}
           >
             <Heading
               fontSize={{ base: "2xl", md: "3xl" }}
