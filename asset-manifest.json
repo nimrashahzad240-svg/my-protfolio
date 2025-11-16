@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/my-protfolio/static/css/main.0940bc3b.css",
-    "main.js": "/my-protfolio/static/js/main.57d5bd50.js",
+    "main.js": "/my-protfolio/static/js/main.35953313.js",
+    "static/media/book-storage.jpg": "/my-protfolio/static/media/book-storage.343129ba82971d95208d.jpg",
     "static/media/p5.jpg": "/my-protfolio/static/media/p5.29acc7690f75c4438067.jpg",
     "static/media/p4.JPG": "/my-protfolio/static/media/p4.7340bc9e9e9e2d9997ad.JPG",
     "static/media/p6.jpg": "/my-protfolio/static/media/p6.0c08346e3d6c5876c9c8.jpg",
@@ -10,6 +11,8 @@
     "static/media/p2.JPG": "/my-protfolio/static/media/p2.1330f4ef2a9d4c4b371a.JPG",
     "static/media/extra-two.jpg": "/my-protfolio/static/media/extra-two.0c1dd30badf710bf344a.jpg",
     "static/media/me.PNG": "/my-protfolio/static/media/me.f283a5c94d619b46e7f7.PNG",
+    "static/media/passion-3.jpg": "/my-protfolio/static/media/passion-3.074f381c333243ce4021.jpg",
+    "static/media/headshot-1.jpg": "/my-protfolio/static/media/headshot-1.aafb04e3bff4503839a7.jpg",
     "static/media/meraki-cover.jpg": "/my-protfolio/static/media/meraki-cover.28d9740c0ad37470781c.jpg",
     "static/media/p7.jpeg": "/my-protfolio/static/media/p7.d283e57046cfd79dca8a.jpeg",
     "static/media/p3.jpg": "/my-protfolio/static/media/p3.b26cedbbc42bea4c29e5.jpg",
@@ -28,10 +31,10 @@
     "static/media/logo-3.png": "/my-protfolio/static/media/logo-3.dda3fcd9b0df92ea77c9.png",
     "index.html": "/my-protfolio/index.html",
     "main.0940bc3b.css.map": "/my-protfolio/static/css/main.0940bc3b.css.map",
-    "main.57d5bd50.js.map": "/my-protfolio/static/js/main.57d5bd50.js.map"
+    "main.35953313.js.map": "/my-protfolio/static/js/main.35953313.js.map"
   },
   "entrypoints": [
     "static/css/main.0940bc3b.css",
-    "static/js/main.57d5bd50.js"
+    "static/js/main.35953313.js"
   ]
 }
