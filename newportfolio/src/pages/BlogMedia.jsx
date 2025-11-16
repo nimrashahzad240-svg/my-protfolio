@@ -21,8 +21,8 @@ import img2 from "../static/images/assignment/book-storage.jpg";
 import img3 from "../static/images/assignment/passion-4.jpg";
 
 import img1settings from "../static/images/assignment/img1settings.jpeg";
-import img2settings from "../static/images/assignment/img2settings.jpeg";
-import img3settings from "../static/images/assignment/img3settings.jpeg";
+import img2settings from "../static/images/assignment/img3settings.jpeg";
+import img3settings from "../static/images/assignment/img2settings.jpeg";
 // EXTRA IMAGES — replace with your actual files
 import extra1 from "../static/images/assignment/extra-1.jpg";
 import extra2 from "../static/images/assignment/extra-2.jpg";
