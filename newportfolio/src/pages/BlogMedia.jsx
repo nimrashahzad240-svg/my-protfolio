@@ -21,8 +21,8 @@ import img2 from "../static/images/assignment/book-storage.jpg";
 import img3 from "../static/images/assignment/passion-4.jpg";
 
 import img1settings from "../static/images/assignment/img1settings.jpeg";
-import img2settings from "../static/images/assignment/img3settings.jpeg";
-import img3settings from "../static/images/assignment/img2settings.jpeg";
+import img2settings from "../static/images/assignment/img2settings.jpeg";
+import img3settings from "../static/images/assignment/img3settings.jpeg";
 // EXTRA IMAGES — replace with your actual files
 import extra1 from "../static/images/assignment/extra-1.jpg";
 import extra2 from "../static/images/assignment/extra-2.jpg";
@@ -66,7 +66,7 @@ export default function BlogMedia() {
       description:
         "Exploring contrast between human expression and sculptural form.",
       editSettings:
-        "This image was captured and edited using my phone's adjustment tools. I Adjusted exposure (-17), Brilliance (+36), Highlights (+29), Shadows (-10), Contrast (+6), Brightness (+4), Black Point (no changes), Saturation (+44), Vibrancy (+47), Warmth (+21), Tint (+18), Sharpness (+7), Defination (+16), Vignette (+34)",
+        "This image was captured and edited using my phone's adjustment tools. I Adjusted depth to (f/4.4)), exposure (-17), Brilliance (+36), Highlights (+29), Shadows (-10), Contrast (+6), Brightness (+4), Black Point (no changes), Saturation (+44), Vibrancy (+47), Warmth (+21), Tint (+18), Sharpness (+7), Defination (+16), Vignette (+34)",
       longDescription:
         "In this composition, I wanted to explore the thin line between designed forms and living presence. I positioned myself between the sculptures and kept my expression serious as I looked directly into the camera, creating a contrast between my stillness and the sculptures’ permanently fixed expressions. I chose this angle because it reduces the physical distance between me and the statues, unlike the front-facing view, which placed them too far behind me and weakened the comparison I wanted to create. I used softer tones so the focus stays on me while still allowing the sculptures to hold equal visual weight in the frame. I also softened the dark circles under my eyes, not to hide anything, but to bring a bit more life into my expression, especially beside objects that cannot change or respond. I’ve always admired how sculptors can create forms that appear emotional, powerful, and almost alive, the wrinkles, the eyes, the expressions, yet remain completely static. That tension between a crafted form and a living human being is what I wanted to capture. I’m fascinated by the idea that art can imitate life, but can never fully become it.",
     },
