@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-protfolio/static/css/main.0940bc3b.css",
-    "main.js": "/my-protfolio/static/js/main.1924fd72.js",
+    "main.js": "/my-protfolio/static/js/main.ade1b873.js",
     "static/media/book-storage.jpg": "/my-protfolio/static/media/book-storage.343129ba82971d95208d.jpg",
     "static/media/extra-10.jpg": "/my-protfolio/static/media/extra-10.134d93f4d1243f1e0c35.jpg",
     "static/media/extra-4.jpg": "/my-protfolio/static/media/extra-4.670af41b92a473756a2e.jpg",
@@ -38,13 +38,16 @@
     "static/media/meraki-banner-1.JPEG": "/my-protfolio/static/media/meraki-banner-1.2890f74dcae6afcf9f26.JPEG",
     "static/media/paint4.png": "/my-protfolio/static/media/paint4.d2f85ade85cba1800686.png",
     "static/media/paint2.png": "/my-protfolio/static/media/paint2.38f1044f34be4899b71b.png",
+    "static/media/img3settings.jpeg": "/my-protfolio/static/media/img3settings.b640ab5e1378b0b1ad3d.jpeg",
+    "static/media/img2settings.jpeg": "/my-protfolio/static/media/img2settings.d67f487bbda3b32f919e.jpeg",
+    "static/media/img1settings.jpeg": "/my-protfolio/static/media/img1settings.eb7ec040f2107c21be62.jpeg",
     "static/media/logo-3.png": "/my-protfolio/static/media/logo-3.dda3fcd9b0df92ea77c9.png",
     "index.html": "/my-protfolio/index.html",
     "main.0940bc3b.css.map": "/my-protfolio/static/css/main.0940bc3b.css.map",
-    "main.1924fd72.js.map": "/my-protfolio/static/js/main.1924fd72.js.map"
+    "main.ade1b873.js.map": "/my-protfolio/static/js/main.ade1b873.js.map"
   },
   "entrypoints": [
     "static/css/main.0940bc3b.css",
-    "static/js/main.1924fd72.js"
+    "static/js/main.ade1b873.js"
   ]
 }
