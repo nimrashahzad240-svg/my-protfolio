@@ -214,7 +214,7 @@ export default function Header() {
             letterSpacing="widest"
             textTransform="uppercase"
           >
-            Blog / Media Assignment
+            Blogs & Media 
           </Heading>
 
           {/* Blog Card */}
@@ -230,11 +230,11 @@ export default function Header() {
             cursor="pointer"
           >
             <Heading
-              fontSize={{ base: "2xl", md: "3xl" }}
+              fontSize={{ base: "1xl", md: "2xl" }}
               color="#3f7a70"
               mb={3}
             >
-              Interactive Media – Assignment 3
+              Check out the Images I captured for Interactive Media Module 
             </Heading>
 
             <Text fontSize="md" color="gray.600">

@@ -2,7 +2,7 @@ import { Box, VStack, Heading, Text, Image, Button } from "@chakra-ui/react";
 
 import img1 from "../static/images/assignment/headshot-1.jpg";
 import img2 from "../static/images/assignment/book-storage.jpg";
-import img3 from "../static/images/assignment/passion-3.jpg";
+import img3 from "../static/images/assignment/passion-4.jpg";
 
 export default function BlogMedia() {
   const images = [
@@ -12,7 +12,7 @@ export default function BlogMedia() {
       title: "Professional Headshot Portrait",
       description: "A formal business-type headshot taken for Assignment 3.",
       editSettings:
-        "This image was captured using a borrowed digital camera and edited using my phone's built-in tools. I Adjusted exposure (+10), Brilliance (+11), Highlights (+13), Shadows (-12), Contrast (+10), Brightness (+14), Black Point (+12), Saturation (+11), Vibrancy (+10), Warmth (+9), Tint (+8), Sharpness (+3), Defination (+10), Vignette (+19) - softened shadows, increased clarity, slight color grading to warm tones. I also used Cleanup tool to remove a few strands of hair.",
+        "This image was captured using a borrowed digital camera and edited using my phone's built-in tools. I Adjusted exposure (+10), Brilliance (+11), Highlights (+13), Shadows (-12), Contrast (+10), Brightness (+14), Black Point (+12), Saturation (+11), Vibrancy (+10), Warmth (+9), Tint (+8), Sharpness (+3), Defination (+10), Vignette (+19) - softened shadows, increased clarity, slight color grading to warm tones. I also used Cleanup tool to remove a few strands of hair. I wanted to keep the background in a cool tone to contrast with my skin tones.",
       longDescription:
         "This headshot was created with the intention of presenting a clean, professional, and approachable image suitable for business contexts. I kept the lighting soft and neutral to highlight natural skin tones while maintaining a minimal background for clarity and focus. My expression was deliberately calm and composed, professional without appearing overly stiff. The warm tones added during editing contribute to a friendly and inviting impression, which is often valued in formal or workplace imagery."
     },
