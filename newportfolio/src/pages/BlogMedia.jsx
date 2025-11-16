@@ -20,6 +20,9 @@ import img1 from "../static/images/assignment/headshot-1.jpg";
 import img2 from "../static/images/assignment/book-storage.jpg";
 import img3 from "../static/images/assignment/passion-4.jpg";
 
+import img1settings from "../static/images/assignment/img1settings.jpeg";
+import img2settings from "../static/images/assignment/img2settings.jpeg";
+import img3settings from "../static/images/assignment/img3settings.jpeg";
 // EXTRA IMAGES — replace with your actual files
 import extra1 from "../static/images/assignment/extra-1.jpg";
 import extra2 from "../static/images/assignment/extra-2.jpg";
@@ -133,7 +136,23 @@ export default function BlogMedia() {
             <Text mt={4} fontSize="sm" color="gray.600">
               <strong>Editing Settings:</strong> {img.editSettings}
             </Text>
-
+            <Image
+              src={
+                img.id === 1
+                  ? img1settings
+                  : img.id === 2
+                  ? img2settings
+                  : img.id === 3
+                  ? img3settings
+                  : null
+              }
+              alt={`Editing settings for ${img.title}`}
+              mt={4}
+              borderRadius="md"
+              objectFit="contain"
+              w="100%"
+              boxShadow="sm"
+            />
             <Text mt={3} color="gray.600" lineHeight="1.7">
               {img.longDescription}
             </Text>
