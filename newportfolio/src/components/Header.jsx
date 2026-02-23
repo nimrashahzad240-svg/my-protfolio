@@ -216,6 +216,73 @@ export default function Header() {
           >
             Blogs & Media 
           </Heading>
+          {/* IMEDIA PROJECT BLOG SECTION */}
+          <Box
+            w="100%"
+            bg="#f8f6f0"
+            py={{ base: 10, md: 16 }}
+            display="flex"
+            justifyContent="center"
+          >
+            <VStack spacing={10} maxW="900px" w="100%" textAlign="center">
+
+              {/* <Heading
+                fontSize={{ base: "3xl", md: "4xl" }}
+                color="#3f7a70"
+                letterSpacing="widest"
+                textTransform="uppercase"
+              >
+                iMedia Production
+              </Heading> */}
+
+              {/* Project Card */}
+              <Box
+                as={RouterLink}
+                to="/second-skin"
+                w="100%"
+                overflow="hidden"
+                bg="white"
+                boxShadow="md"
+                borderRadius="lg"
+                _hover={{
+                  boxShadow: "xl",
+                  transform: "scale(1.02)",
+                  transition: "0.3s",
+                }}
+                cursor="pointer"
+              >
+
+                <Box p={6}>
+                  <Heading
+                    fontSize={{ base: "1xl", md: "2xl" }}
+                    color="#3f7a70"
+                    mb={3}
+                  >
+                    Second Skin  Interactive Art Installation
+                  </Heading>
+
+                  <Text fontSize="md" color="gray.600" mb={4}>
+                    An interactive installation exploring how emotions, touch, and
+                    anonymous actions affect others in shared spaces. Two dresses made
+                    from recycled plastic communicate emotion and presence through light,
+                    creating an intimate exchange between strangers.
+                  </Text>
+
+                  <Text
+                    fontSize="sm"
+                    color="gray.500"
+                    textTransform="uppercase"
+                    letterSpacing="widest"
+                  >
+                    Interactive Media · Emotional Design · Sustainability · Wearable Tech
+                  </Text>
+                </Box>
+              </Box>
+
+            </VStack>
+          </Box>
+
+
 
           {/* Blog Card */}
           <Box
@@ -244,6 +311,41 @@ export default function Header() {
         </VStack>
       </Box>
 
+      {/* Video Blog Card */}
+       <Box
+        w="100%"
+        bg="#f8f6f0"
+        py={{ base: 3, md: 5 }}
+        display="flex"
+        justifyContent="center"
+      >
+        <VStack spacing={8} maxW="900px" w="100%" textAlign="center">
+      {/* <Box
+        as={RouterLink}
+        to="/video-blog"
+        w="100%"
+        p={6}
+        bg="white"
+        boxShadow="md"
+        borderRadius="lg"
+        _hover={{ boxShadow: "xl", transform: "scale(1.02)", transition: "0.3s" }}
+        cursor="pointer"
+      >
+        <Heading
+          fontSize={{ base: "1xl", md: "2xl" }}
+          color="#3f7a70"
+          mb={3}
+        >
+          Video Production - Behind the Scenes & Reflection
+        </Heading>
+
+        <Text fontSize="md" color="gray.600">
+          Watch the video I created for the Interactive Media module, and read the
+          creative reflection, production breakdown, references, and the storyboard.
+        </Text>
+      </Box> */}
+      </VStack>
+      </Box>
       {/* Video Blog Card */}
        <Box
         w="100%"
