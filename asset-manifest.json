@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-protfolio/static/css/main.0940bc3b.css",
-    "main.js": "/my-protfolio/static/js/main.ce2aba6e.js",
+    "main.js": "/my-protfolio/static/js/main.4d0c89ae.js",
     "static/media/book-storage.jpg": "/my-protfolio/static/media/book-storage.343129ba82971d95208d.jpg",
     "static/media/extra-10.jpg": "/my-protfolio/static/media/extra-10.134d93f4d1243f1e0c35.jpg",
     "static/media/extra-4.jpg": "/my-protfolio/static/media/extra-4.670af41b92a473756a2e.jpg",
@@ -16,9 +16,11 @@
     "static/media/extra-2.jpg": "/my-protfolio/static/media/extra-2.d35d5891ad0a786d7475.jpg",
     "static/media/p2.JPG": "/my-protfolio/static/media/p2.1330f4ef2a9d4c4b371a.JPG",
     "static/media/extra-8.jpg": "/my-protfolio/static/media/extra-8.6ab108778bbf1e630158.jpg",
+    "static/media/hugging-the-dress.png": "/my-protfolio/static/media/hugging-the-dress.fd9d90ff297326281e1c.png",
     "static/media/extra-two.jpg": "/my-protfolio/static/media/extra-two.0c1dd30badf710bf344a.jpg",
     "static/media/me.PNG": "/my-protfolio/static/media/me.f283a5c94d619b46e7f7.PNG",
     "static/media/headshot-1.jpg": "/my-protfolio/static/media/headshot-1.aafb04e3bff4503839a7.jpg",
+    "static/media/dress.jpg": "/my-protfolio/static/media/dress.261e09455443b40faeb7.jpg",
     "static/media/extra-5.jpg": "/my-protfolio/static/media/extra-5.280c0a105c3eadf8ab51.jpg",
     "static/media/extra-1.jpg": "/my-protfolio/static/media/extra-1.f2c187f71d4af1ca12f1.jpg",
     "static/media/extra-7.jpg": "/my-protfolio/static/media/extra-7.59d86d2d0e2ea339022c.jpg",
@@ -46,10 +48,10 @@
     "static/media/logo-3.png": "/my-protfolio/static/media/logo-3.dda3fcd9b0df92ea77c9.png",
     "index.html": "/my-protfolio/index.html",
     "main.0940bc3b.css.map": "/my-protfolio/static/css/main.0940bc3b.css.map",
-    "main.ce2aba6e.js.map": "/my-protfolio/static/js/main.ce2aba6e.js.map"
+    "main.4d0c89ae.js.map": "/my-protfolio/static/js/main.4d0c89ae.js.map"
   },
   "entrypoints": [
     "static/css/main.0940bc3b.css",
-    "static/js/main.ce2aba6e.js"
+    "static/js/main.4d0c89ae.js"
   ]
 }
