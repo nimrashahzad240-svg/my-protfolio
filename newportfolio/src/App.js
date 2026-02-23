@@ -9,6 +9,7 @@ import Resume from "./pages/Resume";
 import Footer from "./components/Footer";
 import BlogMedia from "./pages/BlogMedia";
 import VideoBlog from "./pages/VideoBlog";
+import SecondSkin from "./pages/SecondSkin";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/blog-media" element={<BlogMedia />} />
         <Route path="/video-blog" element={<VideoBlog />} />
+        <Route path="/second-skin" element={<SecondSkin />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
