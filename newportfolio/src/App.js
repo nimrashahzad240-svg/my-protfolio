@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import BlogMedia from "./pages/BlogMedia";
 import VideoBlog from "./pages/VideoBlog";
 import SecondSkin from "./pages/SecondSkin";
+import AlgorithmicSoundscape from "./pages/AlgorithmicSoundscape";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/blog-media" element={<BlogMedia />} />
         <Route path="/video-blog" element={<VideoBlog />} />
         <Route path="/second-skin" element={<SecondSkin />} />
+        <Route path="/algorithmic-soundscape" element={<AlgorithmicSoundscape />} />
       </Routes>
       {/* <Footer /> */}
     </Router>

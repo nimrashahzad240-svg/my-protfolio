@@ -280,6 +280,87 @@ export default function Header() {
               </Box>
 
             </VStack>
+
+              <VStack spacing={10} maxW="900px" w="100%" textAlign="center">
+
+              {/* <Heading
+                fontSize={{ base: "3xl", md: "4xl" }}
+                color="#3f7a70"
+                letterSpacing="widest"
+                textTransform="uppercase"
+              >
+                iMedia Production
+              </Heading> */}
+
+              {/* Project Card */}
+              <Box
+                as={RouterLink}
+                to="/second-skin"
+                w="100%"
+                overflow="hidden"
+                bg="white"
+                boxShadow="md"
+                borderRadius="lg"
+                _hover={{
+                  boxShadow: "xl",
+                  transform: "scale(1.02)",
+                  transition: "0.3s",
+                }}
+                cursor="pointer"
+              >
+
+                <VStack spacing={10} maxW="900px" w="100%" textAlign="center">
+
+  {/* Algorithmic Soundscape Project Card */}
+  <Box
+    as={RouterLink}
+    to="/algorithmic-soundscape"
+    w="100%"
+    overflow="hidden"
+    bg="white"
+    boxShadow="md"
+    borderRadius="lg"
+    _hover={{
+      boxShadow: "xl",
+      transform: "scale(1.02)",
+      transition: "0.3s",
+    }}
+    cursor="pointer"
+  >
+
+    <Box p={6}>
+      <Heading
+        fontSize={{ base: "1xl", md: "2xl" }}
+        color="#3f7a70"
+        mb={3}
+      >
+        Algorithmic Soundscape Performance
+      </Heading>
+
+      <Text fontSize="md" color="gray.600" mb={4}>
+        An interactive sonic performance exploring randomness,
+        rule-based interaction, and environmental sound. Using
+        samples from the Freesound archive, the piece transforms
+        keyboard input and chance operations into a live evolving
+        soundscape.
+      </Text>
+
+      <Text
+        fontSize="sm"
+        color="gray.500"
+        textTransform="uppercase"
+        letterSpacing="widest"
+      >
+        Interactive Media · Algorithmic Sound · Sound Design · Performance
+      </Text>
+    </Box>
+
+  </Box>
+
+</VStack>
+              </Box>
+
+            </VStack>
           </Box>
 
 
