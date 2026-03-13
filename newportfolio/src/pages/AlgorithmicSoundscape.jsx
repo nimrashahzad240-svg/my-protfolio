@@ -128,6 +128,92 @@ export default function AlgorithmicSoundscape() {
     The behaviour of the system follows these rules:
   </Text>
 
+<VStack spacing={5} align="start">
+   <AspectRatio ratio={16 / 9} w="100%">
+  <iframe
+    src="https://www.youtube.com/embed/foezeM4gM1Q"
+    title="Algorithmic Soundscape Performance"
+    allowFullScreen
+  />
+</AspectRatio>
+  <Heading size="md" color="#3f7a70">
+    Performance Rules
+  </Heading>
+
+  <Text>
+    The performance is controlled through a rule-based interaction
+    between a dice and a keyboard-triggered sound instrument.
+    The keyboard acts as a simplified piano-like interface where
+    each key triggers a different sound sample.
+  </Text>
+
+  <Text>
+    Before the performance begins, sound samples are assigned to
+    all number keys (1–0), alphabetical keys (A–Z), the space bar,
+    and the enter key. Each key therefore acts as a unique sonic
+    trigger within the instrument.
+  </Text>
+
+  <Text>
+    The performer rolls a six-sided dice repeatedly during the
+    performance. The number rolled determines which type of key
+    interaction is allowed. This introduces an element of chance
+    while still requiring the performer to make decisions within
+    specific constraints.
+  </Text> 
+  <Box ml={5}>
+  <Text>
+    The rules associated with each dice value are:
+  </Text>
+
+  <Text>
+    • <strong>1 — Vowel Keys</strong><br/>
+    The performer may press any vowel key (A, E, I, O, U).  
+    Each vowel can only be used once during the performance and
+    cannot be repeated.
+  </Text>
+
+  <Text>
+    • <strong>2 — Letters From My Name</strong><br/>
+    The performer may press any consonant letter that appears in
+    their name. Vowels from the name are excluded.
+  </Text>
+
+  <Text>
+    • <strong>3 — Number Keys</strong><br/>
+    The performer may press any number key from 0–9.
+  </Text>
+
+  <Text>
+    • <strong>4 — Space Bar</strong><br/>
+    The performer presses the space bar to trigger its assigned sound.
+  </Text>
+
+  <Text>
+    • <strong>5 — Enter Key</strong><br/>
+    The performer presses the enter key to trigger its assigned sound.
+  </Text>
+
+  <Text>
+    • <strong>6 — Any Alphabet Key</strong><br/>
+    The performer may press any alphabetical key on the keyboard.
+  </Text>
+</Box>
+  <Text mt={5}>
+    When a key is pressed, its associated sound begins playing.
+    If another key is pressed while a sound is still playing,
+    the currently playing sound immediately stops and the new
+    sound replaces it. This ensures that only one sound is active
+    at a time, reinforcing the idea of the keyboard as a sequence
+    of sonic "notes".
+  </Text>
+
+  <Text>
+    This rule system combines randomness (dice rolls) with
+    performer choice, creating a balance between chance,
+    constraint, and musical interaction.
+  </Text>
+</VStack>
   <Text>
     • Every key on the keyboard is associated with one sound sample.
     <br />
