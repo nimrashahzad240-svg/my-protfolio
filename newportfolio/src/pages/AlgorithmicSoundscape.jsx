@@ -273,9 +273,76 @@ export default function AlgorithmicSoundscape() {
         <Divider />
 
         {/* Reflection */}
+        {/* Reflection */}
+<VStack spacing={5} align="start" w="100%">
+  <Heading size="lg" color="#3f7a70">
+    Reflection on Learning Journey
+  </Heading>
+
+  <Text>
+    This reflective vlog documents my learning journey throughout this module,
+    where I explored key concepts such as interactive art, generative systems,
+    sound design, and algorithmic thinking. It reflects on lectures, readings,
+    workshops, and practical projects developed up to this point.
+  </Text>
+
+  <AspectRatio ratio={16 / 9} w="100%">
+  <iframe
+    src="https://www.youtube.com/embed/cuQss4acNRM"
+    title="Reflective Vlog"
+    allowFullScreen
+  />
+</AspectRatio>
+
+  <Text fontSize="sm" color="gray.500">
+    Reflective vlog discussing my development, ideas, and learning across the module.
+  </Text>
+
+  <Text>
+    One of the most significant shifts in my thinking has been my understanding
+    of what art can be. Coming from a traditional painting background, I initially
+    saw art as something fixed and complete once created. However, through this
+    module, I began to understand that art is not finished until it is experienced
+    by an audience. The meaning of an artwork is shaped through interaction,
+    perception, and interpretation.
+  </Text>
+
+  <Text>
+    The introduction to generative and algorithmic art particularly influenced
+    my perspective. I learned that creativity can exist within constraints, and
+    that rules do not limit artistic expression but instead create new possibilities.
+    This idea was reinforced through workshop exercises where we designed systems
+    and games using simple rule sets, demonstrating how structure can lead to
+    unexpected and engaging outcomes.
+  </Text>
+
+  <Text>
+    My work on the algorithmic soundscape project directly reflects this learning.
+    By combining randomness (through dice-based rules) with structured interaction,
+    I was able to create a system that produces unpredictable yet meaningful sonic
+    experiences. This helped me understand the balance between control and chance
+    in creative systems.
+  </Text>
+
+  <Text>
+    The field recording and sound composition exercises also expanded my awareness
+    of sound as a creative medium. I became more attentive to everyday environmental
+    sounds and learned how they can be captured, manipulated, and transformed into
+    expressive compositions. This process changed how I listen to and interpret my
+    surroundings.
+  </Text>
+
+  <Text>
+    Overall, this module has encouraged me to embrace experimentation and uncertainty.
+    Rather than focusing on creating a “perfect” final piece, I now approach creative
+    work as an evolving process involving interaction, systems, and exploration.
+    This shift from thinking about art as static objects to dynamic experiences
+    has significantly influenced my creative practice.
+  </Text>
+</VStack>
         <VStack spacing={5} align="start">
           <Heading size="md" color="#3f7a70">
-            Reflection
+            Reflection on Sound Walk creation Assignment
           </Heading>
 
           <Text>
