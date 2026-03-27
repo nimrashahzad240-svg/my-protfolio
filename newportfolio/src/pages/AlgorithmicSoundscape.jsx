@@ -339,6 +339,27 @@ export default function AlgorithmicSoundscape() {
     This shift from thinking about art as static objects to dynamic experiences
     has significantly influenced my creative practice.
   </Text>
+
+  <Text fontStyle="italic">
+  Looking ahead, I am particularly interested in continuing to explore
+  interactive and generative approaches in my future projects, especially
+  those involving sound and music creation. Working on sound-based
+  assignments has shown me how powerful audio can be as an interactive
+  medium, and I am now more confident in using tools and systems to
+  generate and manipulate sound creatively. I am especially interested
+  in developing projects where users can actively influence or shape
+  the audio experience in real time.
+</Text>
+
+<Text fontStyle="italic">
+  This has also strengthened my understanding of interaction design,
+  where the focus is not just on the final output but on how users
+  engage with a system. I have learned to think more carefully about
+  how rules, inputs, and user actions can shape an experience. In my
+  future work, I would like to further explore how interaction design
+  can be combined with sound to create immersive, responsive, and
+  meaningful digital experiences.
+</Text>
 </VStack>
         <VStack spacing={5} align="start">
           <Heading size="md" color="#3f7a70">
